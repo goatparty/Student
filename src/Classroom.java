@@ -1,8 +1,19 @@
+/*
+ * ******************************************************
+ *  * Copyright (C) 9/9/15 11:58 AM 2018514
+ *  *
+ *  * This file is part of project :"Students".
+ *  *
+ *  * Classroom.java can not be copied and/or distributed without the express
+ *  * permission of 2018514
+ *  ******************************************************
+ */
+
 /**
- * Created by 2018514 on 9/3/15.
+ * Created by 2018514 on 9/3/15. Intro To Java
  */
 import java.util.*;
-public class Classroom {
+class Classroom {
     public static void main(String [] args) {
         Student student;
         Scanner keyboard = new Scanner(System.in);
@@ -17,11 +28,6 @@ public class Classroom {
 
         student = new Student(sc1,sc2,sc3);
 
-        Syestem.out.println("Score 1: " + sc1 + "\nScore 2: " + sc2 + "\nScore 3: " + sc3 + "\nAverage: " student.getAverage());
-
-
-
-
-
+        System.out.println(String.format("Score 1: %s\nScore 2: %s\nScore 3: %s\nAverage: %s", sc1, sc2, sc3, student.getAverage()));
     }
 }
